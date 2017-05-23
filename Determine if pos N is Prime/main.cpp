@@ -2,11 +2,13 @@
 #include <cmath> // for square root
 using namespace std;
 
-bool primeTest ( int n) { // test if n is prime
+/* algorithm runs until sqrt(n), running time is O(sqrt(n)).  */ 
+
+bool primeTest (int n) { // test if n is prime
         // loop untill square root of n
         for (int i = 2; i < sqrt(n); i++){
                 if (n % i == 0){
-                // if ther n is divisible by i then its not prime
+                // if n is divisible by i then its not prime
                         return false;
                 }
         }
@@ -21,7 +23,7 @@ int main (void) {
         cin  >> n;
 
         // check if n is prime or not
-        if ( primeTest(n))
+        if (primeTest(n))
                 cout << "n is prime "     << endl;
         else
                 cout << "n is not prime " << endl;
@@ -29,3 +31,4 @@ int main (void) {
 return 0;
 
 }
+
