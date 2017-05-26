@@ -19,16 +19,23 @@ bool primeTest (int n) { // test if n is prime
 
 int main (void) {
         int n;
-        cout << "Enter value for n "      << endl;
+        cout << "Enter value for n... "      << endl;
         cin  >> n;
 
         // check if n is prime or not
         if (primeTest(n))
-                cout << "n is prime "     << endl;
+                cout << "n is prime. "     << endl;
         else
-                cout << "n is not prime " << endl;
+                cout << "n is not prime. " << endl;
 
 return 0;
 
 }
 
+/* output */
+/* Enter value for n... 
+2
+n is prime. */ 
+/*Enter value for n... 
+6
+n is not prime.*/
